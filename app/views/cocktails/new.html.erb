@@ -1,0 +1,17 @@
+<div class="container mt-5" style="border-radius: 30px">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card text-center">
+        <div class="card-header">
+          <h1 style="color: black">Create a new cocktail</h1>
+        </div>
+        <div class="card-body" style="color: black">
+          <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+          <%= f.button :submit, class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
